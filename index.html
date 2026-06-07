@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="pl"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>AI Chatbot GOV</title> 
+  <link rel="stylesheet" href="style.css"> 
+</head> 
+<body> 
+  <header> 
+    <h1>AI Agent Administracji Publicznej</h1> 
+    <p>Zapytaj o podstawowe informacje urzędowe</p> 
+  </header> 
+ 
+  <main class="container"> 
+    <section class="chat-container"> 
+      <h2>Czat z agentem</h2> 
+      <div class="messages" id="messages"> 
+        <div class="bot-message"><strong>Bot:</strong> Witaj. Zadaj pytanie.</div> 
+      </div> 
+      <div class="input-area"> 
+        <input type="text" id="userInput" placeholder="Zadaj pytanie..."> 
+        <button onclick="sendMessage()">Wyślij</button> 
+      </div> 
+    </section> 
+ 
+    <section class="faq"> 
+      <h2>FAQ</h2> 
+      <details> 
+        <summary>Jak działa chatbot?</summary> 
+        <p>Bot odpowiada na podstawie przygotowanych reguł i wiadomości.</p> 
+      </details> 
+      <details> 
+        <summary>Co zrobić, gdy bot nie zna odpowiedzi?</summary> 
+        <p>Skontaktuj się bezpośrednio z urzędem.</p> 
+      </details> 
+    </section> 
+ 
+    <section class="contact"> 
+      <h2>Kontakt</h2> 
+      <form> 
+        <input type="text" placeholder="Imię i nazwisko" required> 
+        <input type="email" placeholder="Adres e-mail" required> 
+        <textarea placeholder="Wiadomość" rows="5" required></textarea> 
+        <button type="submit">Wyślij formularz</button> 
+      </form> 
+    </section> 
+  </main> 
+ 
+  <script src="script.js"></script> 
+</body> 
+</html> 
